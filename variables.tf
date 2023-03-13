@@ -46,10 +46,10 @@ variable "skip_final_snapshot" {
   type        = string
   default     = true
 }
-# variable "role_arn" {
-#   description = "Role ARN"
-#   type        = string
-# }
+variable "role_arn" {
+  description = "Role ARN"
+  type        = string
+}
 variable "region"{
   description="Region"
   type = string
