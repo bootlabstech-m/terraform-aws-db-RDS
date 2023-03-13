@@ -9,7 +9,7 @@ resource "aws_db_instance" "db" {
   parameter_group_name = var.parameter_group_name
   skip_final_snapshot  = var.skip_final_snapshot
   db_subnet_group_name = aws_db_subnet_group.db_subnet_group.id
-  vpc_security_group_ids = ["sg-0faa41ba68ccd014c"]
+  vpc_security_group_ids = var.vpc_security_group_ids
 }
 resource "aws_db_subnet_group" "db_subnet_group" {
   name       = "db_subnet_group"
