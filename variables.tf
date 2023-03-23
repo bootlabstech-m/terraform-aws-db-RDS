@@ -68,3 +68,7 @@ variable "db_subnet_group_name" {
   description = "db_subnet_group_name"
   type        = string
 }
+variable "db_identifier" {
+  description = "db_identifier"
+  type        = string
+}
