@@ -64,4 +64,7 @@ variable "snapshot_identifier" {
   description = "snapshot_identifier"
   type        = string
 }
-
+variable "db_subnet_group_name" {
+  description = "db_subnet_group_name"
+  type        = string
+}

@@ -16,6 +16,6 @@ resource "aws_db_instance" "db" {
 
 }
 resource "aws_db_subnet_group" "db_subnet_group" {
-  name       = "db_subnet_group01"
+  name       = var.db_subnet_group_name
   subnet_ids = var.subnet_ids
 }
