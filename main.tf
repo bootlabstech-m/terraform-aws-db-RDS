@@ -13,9 +13,15 @@ resource "aws_db_instance" "db" {
   vpc_security_group_ids = var.vpc_security_group_ids
   snapshot_identifier    = var.snapshot_identifier
   publicly_accessible    = false
+    lifecycle {
+    ignore_changes = [tags]
+  }
 
 }
 resource "aws_db_subnet_group" "db_subnet_group" {
   name       = var.db_subnet_group_name
   subnet_ids = var.subnet_ids
+    lifecycle {
+    ignore_changes = [tags]
+  }
 }
