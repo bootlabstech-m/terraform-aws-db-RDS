@@ -50,7 +50,6 @@ variable "role_arn" {
 variable "region"{
   description="Region"
   type = string
-  default = "ap-south-1"
 }
 variable "subnet_ids"{
   description="subnet_ids"
@@ -68,7 +67,7 @@ variable "db_subnet_group_name" {
   description = "db_subnet_group_name"
   type        = string
 }
-variable "db_identifier" {
+variable "name" {
   description = "db_identifier"
   type        = string
 }
