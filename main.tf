@@ -12,6 +12,7 @@ resource "aws_db_instance" "db" {
   db_subnet_group_name = aws_db_subnet_group.db_subnet_group.id
   vpc_security_group_ids = var.vpc_security_group_ids
   snapshot_identifier    = var.snapshot_identifier
+  storage_encrypted           = true
   publicly_accessible    = false
     lifecycle {
     ignore_changes = [tags]
