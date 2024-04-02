@@ -20,13 +20,13 @@ variable "db_engine_version" {
 }
 variable "db_instance_class" {
   description = "db_instance_class"
-  type         = string
+  type        = string
 
 }
 variable "db_username" {
   description = "db_username"
   type        = string
- 
+
 }
 variable "db_password" {
   description = "db_password"
@@ -36,7 +36,7 @@ variable "db_password" {
 variable "parameter_group_name" {
   description = "parameter_group_name"
   type        = string
-  
+
 }
 variable "skip_final_snapshot" {
   description = "skip_final_snapshot"
@@ -47,18 +47,18 @@ variable "role_arn" {
   description = "Role ARN"
   type        = string
 }
-variable "region"{
-  description="Region"
-  type = string
-  default = "ap-south-1"
+variable "region" {
+  description = "Region"
+  type        = string
+  default     = "ap-south-1"
 }
-variable "subnet_ids"{
-  description="subnet_ids"
-  type = list(string)
+variable "subnet_ids" {
+  description = "subnet_ids"
+  type        = list(string)
 }
-variable "vpc_security_group_ids"{
-  description="vpc_security_group_ids"
-  type = list(string)
+variable "vpc_security_group_ids" {
+  description = "vpc_security_group_ids"
+  type        = list(string)
 }
 variable "snapshot_identifier" {
   description = "snapshot_identifier"
