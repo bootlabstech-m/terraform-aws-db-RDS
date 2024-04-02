@@ -17,7 +17,6 @@ resource "aws_db_instance" "db" {
   lifecycle {
     ignore_changes = [tags]
   }
-
 }
 resource "aws_db_subnet_group" "db_subnet_group" {
   name       = var.db_subnet_group_name

@@ -76,3 +76,4 @@ variable "storage_type" {
   description = "storage_type"
   type        = string
 }
+
