@@ -72,3 +72,7 @@ variable "db_identifier" {
   description = "db_identifier"
   type        = string
 }
+variable "storage_type" {
+  description = "storage_type"
+  type        = string
+}
