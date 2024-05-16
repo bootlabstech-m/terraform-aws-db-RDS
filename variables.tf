@@ -3,7 +3,7 @@ variable "allocated_storage" {
   type        = number
 }
 
-variable "db_name" {
+variable "name" {
   description = "db_name"
   type        = string
 }
