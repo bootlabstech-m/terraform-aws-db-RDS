@@ -3,7 +3,7 @@ variable "allocated_storage" {
   type        = number
 }
 
-variable "name" {
+variable "db_name" {
   description = "db_name"
   type        = string
 }
@@ -28,11 +28,16 @@ variable "db_username" {
   type        = string
 
 }
-# variable "db_password" {
-#   description = "db_password"
-#   type        = string
+variable "db_password" {
+  description = "db_password"
+  type        = string
 
-# }
+}
+variable "multi_az" {
+  description = "parameter_group_name"
+  type        = bool
+  
+}
 variable "parameter_group_name" {
   description = "parameter_group_name"
   type        = string
@@ -76,4 +81,3 @@ variable "storage_type" {
   description = "storage_type"
   type        = string
 }
-
