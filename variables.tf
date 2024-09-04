@@ -81,3 +81,8 @@ variable "storage_type" {
   description = "storage_type"
   type        = string
 }
+variable "storage_encrypted" {
+  type = bool
+  default = false
+  
+}
