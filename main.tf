@@ -15,6 +15,7 @@ resource "aws_db_instance" "db" {
   snapshot_identifier    = var.snapshot_identifier
   publicly_accessible    = false
   multi_az = var.multi_az
+  license_model          = var.license_model
   storage_encrypted           = var.storage_encrypted
   lifecycle {
     ignore_changes = [tags]

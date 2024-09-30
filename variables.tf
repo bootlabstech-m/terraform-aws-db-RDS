@@ -86,3 +86,7 @@ variable "storage_encrypted" {
   default = false
   
 }
+variable "license_model" {
+  type        = string
+  
+}
